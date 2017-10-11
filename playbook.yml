@@ -1,0 +1,16 @@
+- hosts: amazon
+  remote_user: ubuntu
+  gather_facts: no
+  pre_tasks:
+    - name: 'install python2'
+      raw: apt -y update && apt install -y python-minimal
+      sudo: yes
+    - setup:
+  vars:
+    app_name: ethgis
+    github_user: ingenieroariel
+    server_name: ethgis.terranodo.co
+    repo_name: terranodo
+    deploy_user: ubuntu
+  roles:
+     - { role: GeoNode.geonode }
