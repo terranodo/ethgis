@@ -3,7 +3,7 @@
 # This file contains either commit hashes or ==.
 
 # Specific versions for GeoNode deployment (geonode's own setup.py does not specify versions)
-Django==1.8.7
+Django==2.2.24
 MultipartPostHandler==0.1.0
 OWSLib==0.11.0
 Paver==1.2.1
