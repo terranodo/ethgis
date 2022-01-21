@@ -80,7 +80,7 @@ urllib3==1.16
 GeoNode==2.5
 
 # Enhance Django's shell
-ipython==5.0.0
+ipython==7.16.3
 
 # Allow production use with uWSGI instead of runserver
 uWSGI==2.0.13.1
